@@ -6,14 +6,13 @@ const newWindowPage=require('../../app/Pageobjects/newWindowPage')
 const iframeGoogleCloud=require('../../app/Pageobjects/iframe-googlecloud')
 describe("Hurtme plenty",() =>{
     it("Searching",async() =>{
-        await homePage.open()
-        await homePage.searchinput.click()
-        await homePage.searchinput.setValue("Google Cloud Platform Pricing Calculator");
-        await browser.keys('Enter');
-        await expect(homePage.calculatorlink).toBeDisplayed()
-        await homePage.gotocalculatorpage()
-        await expect(browser).toHaveTitleContaining('Pricing Calculator')
-        await browser.pause(2000); 
+    await homePage.open()
+    await homePage.searchinput.click()
+    await homePage.searchinput.setValue("Google Cloud Platform Pricing Calculator");
+    await browser.keys('Enter');
+    await expect(homePage.calculatorlink).toBeDisplayed()
+    await homePage.gotocalculatorpage()
+    await expect(browser).toHaveTitleContaining('Pricing Calculator') 
     })
     it("Compute engine",async() => {
     await calculatorPage.open();
