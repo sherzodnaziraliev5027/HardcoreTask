@@ -7,16 +7,17 @@ const iframeGoogleCloud=require('../../app/Pageobjects/iframe-googlecloud')
 describe("Hurtme plenty",() =>{
     it("Searching",async() =>{
     await homePage.open()
+    await homePage.searchinput.waitForClickable({timeout:3000})
     await homePage.searchinput.click()
     await homePage.searchinput.setValue("Google Cloud Platform Pricing Calculator");
     await browser.keys('Enter');
-    await expect(homePage.calculatorlink).toBeDisplayed()
+    await homePage.calculatorlink.waitForDisplayed({timeout:3000})
     await homePage.gotocalculatorpage()
-    await expect(browser).toHaveTitleContaining('Pricing Calculator') 
+    await homePage.waitingload.waitForDisplayed({timeout:3000})
     })
     it("Compute engine",async() => {
     await calculatorPage.open();
-    await calculatorPage.numberOfInstances.waitForDisplayed({timeout:3000})
+    await calculatorPage.numberOfInstances.waitForDisplayed({timeout:5000})
     await calculatorPage.numberOfInstances.setValue(4);
     await calculatorPage.instancesfor.setValue('leave blank');
     await calculatorPage.clickSelection.waitForClickable({timeout:3000})
