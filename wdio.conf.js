@@ -23,7 +23,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/hurtme-plentytask.js'
+        './test/specs/**/Hardcoretask.js'
     ],
     // Patterns to exclude.
     exclude: [
