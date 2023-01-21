@@ -13,7 +13,7 @@ describe("HardCore task",() =>{
     await browser.keys('Enter');
     await homePage.calculatorlink.waitForDisplayed({timeout:3000})
     await homePage.gotocalculatorpage()
-    await homePage.waitingload.waitForDisplayed({timeout:3000})
+    await homePage.waitingload.waitForDisplayed({timeout:5000})
     })
     it("Compute engine",async() => {
     await calculatorPage.open();
