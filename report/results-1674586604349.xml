@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="HardCore task" timestamp="2023-01-24T23:56:45" time="134.707" tests="3" failures="2" errors="2" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="HardCore task"/>
+      <property name="capabilities" value="chrome.109_0_5414_75.windows"/>
+      <property name="file" value="file:///D:/devops/wdio2/test/specs/Hardcoretask.js"/>
+    </properties>
+    <testcase classname="chrome.109_0_5414_75.windows.HardCore_task" name="Searching" time="23.342">
+      <failure/>
+      <error message="element (&quot;div[class$='gs-title'] > [href$='products/calculator']&quot;) still not displayed after 5000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/url - {"url":"https://cloud.google.com/"}
+RESULT: {"url":"https://cloud.google.com/"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"828f705e-ecbb-4e45-bdb4-87e613c35022","ELEMENT":"828f705e-ecbb-4e45-bdb4-87e613c35022"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"828f705e-ecbb-4e45-bdb4-87e613c35022","ELEMENT":"828f705e-ecbb-4e45-bdb4-87e613c35022"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"828f705e-ecbb-4e45-bdb4-87e613c35022","ELEMENT":"828f705e-ecbb-4e45-bdb4-87e613c35022"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"828f705e-ecbb-4e45-bdb4-87e613c35022","ELEMENT":"828f705e-ecbb-4e45-bdb4-87e613c35022"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/828f705e-ecbb-4e45-bdb4-87e613c35022/click - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/828f705e-ecbb-4e45-bdb4-87e613c35022/clear - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/828f705e-ecbb-4e45-bdb4-87e613c35022/value - {"text":"Google Cloud Platform Pricing Calculator"}
+RESULT: {"text":"Google Cloud Platform Pricing Calculator"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("div[class$='gs-title'] > [href$='products/calculator']") still not displayed after 5000ms
+    at async Context.<anonymous> (D:\devops\wdio2\test\specs\Hardcoretask.js:14:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.109_0_5414_75.windows.HardCore_task" name="Compute engine" time="51.364">
+      <system-out><![CDATA[
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/url - {"url":"https://cloudpricingcalculator.appspot.com/"}
+RESULT: {"url":"https://cloudpricingcalculator.appspot.com/"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"input[ng-model$='quantity']"}
+RESULT: {"using":"css selector","value":"input[ng-model$='quantity']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"4c236245-a322-49a8-8983-4f7088503f22","ELEMENT":"4c236245-a322-49a8-8983-4f7088503f22"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"4c236245-a322-49a8-8983-4f7088503f22","ELEMENT":"4c236245-a322-49a8-8983-4f7088503f22"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"input[ng-model$='quantity']"}
+RESULT: {"using":"css selector","value":"input[ng-model$='quantity']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/4c236245-a322-49a8-8983-4f7088503f22/clear - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/4c236245-a322-49a8-8983-4f7088503f22/value - {"text":"4"}
+RESULT: {"text":"4"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"input[ng-model$='computeServer.label']"}
+RESULT: {"using":"css selector","value":"input[ng-model$='computeServer.label']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/f3875aeb-9747-482a-92e2-8d89839903d6/clear - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/f3875aeb-9747-482a-92e2-8d89839903d6/value - {"text":"leave blank"}
+RESULT: {"text":"leave blank"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-select[placeholder='Series']"}
+RESULT: {"using":"css selector","value":"md-select[placeholder='Series']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f40fa4bc-e16b-40e0-9212-ec4f3522de2d","ELEMENT":"f40fa4bc-e16b-40e0-9212-ec4f3522de2d"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f40fa4bc-e16b-40e0-9212-ec4f3522de2d","ELEMENT":"f40fa4bc-e16b-40e0-9212-ec4f3522de2d"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f40fa4bc-e16b-40e0-9212-ec4f3522de2d","ELEMENT":"f40fa4bc-e16b-40e0-9212-ec4f3522de2d"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f40fa4bc-e16b-40e0-9212-ec4f3522de2d","ELEMENT":"f40fa4bc-e16b-40e0-9212-ec4f3522de2d"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-select[placeholder='Series']"}
+RESULT: {"using":"css selector","value":"md-select[placeholder='Series']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/f40fa4bc-e16b-40e0-9212-ec4f3522de2d/click - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"xpath","value":"//div[contains(text(),'N1')]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(),'N1')]"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/c627aba7-3147-4408-9bf0-4523a4ac3ed7/click - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-select[placeholder='Instance type']"}
+RESULT: {"using":"css selector","value":"md-select[placeholder='Instance type']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/64bde708-ae10-41d2-8779-22f4790614b6/click - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-option[value$='N1-STANDARD-8']"}
+RESULT: {"using":"css selector","value":"md-option[value$='N1-STANDARD-8']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"aa64e471-4af6-4884-9893-4300db1e92fc","ELEMENT":"aa64e471-4af6-4884-9893-4300db1e92fc"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"aa64e471-4af6-4884-9893-4300db1e92fc","ELEMENT":"aa64e471-4af6-4884-9893-4300db1e92fc"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"aa64e471-4af6-4884-9893-4300db1e92fc","ELEMENT":"aa64e471-4af6-4884-9893-4300db1e92fc"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"aa64e471-4af6-4884-9893-4300db1e92fc","ELEMENT":"aa64e471-4af6-4884-9893-4300db1e92fc"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"aa64e471-4af6-4884-9893-4300db1e92fc","ELEMENT":"aa64e471-4af6-4884-9893-4300db1e92fc"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"aa64e471-4af6-4884-9893-4300db1e92fc","ELEMENT":"aa64e471-4af6-4884-9893-4300db1e92fc"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-option[value$='N1-STANDARD-8']"}
+RESULT: {"using":"css selector","value":"md-option[value$='N1-STANDARD-8']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/aa64e471-4af6-4884-9893-4300db1e92fc/click - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-checkbox[ng-model$='computeServer.addGPUs']"}
+RESULT: {"using":"css selector","value":"md-checkbox[ng-model$='computeServer.addGPUs']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f6134390-ba40-466b-a009-5f91664770f0","ELEMENT":"f6134390-ba40-466b-a009-5f91664770f0"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f6134390-ba40-466b-a009-5f91664770f0","ELEMENT":"f6134390-ba40-466b-a009-5f91664770f0"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f6134390-ba40-466b-a009-5f91664770f0","ELEMENT":"f6134390-ba40-466b-a009-5f91664770f0"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f6134390-ba40-466b-a009-5f91664770f0","ELEMENT":"f6134390-ba40-466b-a009-5f91664770f0"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-checkbox[ng-model$='computeServer.addGPUs']"}
+RESULT: {"using":"css selector","value":"md-checkbox[ng-model$='computeServer.addGPUs']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/f6134390-ba40-466b-a009-5f91664770f0/click - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-checkbox[ng-model$='computeServer.addSud'] > div.md-label"}
+RESULT: {"using":"css selector","value":"md-checkbox[ng-model$='computeServer.addSud'] > div.md-label"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/65f8f65b-6663-4bdc-ac72-e8964a10e090/click - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-select[placeholder='GPU type']"}
+RESULT: {"using":"css selector","value":"md-select[placeholder='GPU type']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"28962fea-4ffa-4dd6-b2c5-c1d13b90f60e","ELEMENT":"28962fea-4ffa-4dd6-b2c5-c1d13b90f60e"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"28962fea-4ffa-4dd6-b2c5-c1d13b90f60e","ELEMENT":"28962fea-4ffa-4dd6-b2c5-c1d13b90f60e"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"28962fea-4ffa-4dd6-b2c5-c1d13b90f60e","ELEMENT":"28962fea-4ffa-4dd6-b2c5-c1d13b90f60e"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"28962fea-4ffa-4dd6-b2c5-c1d13b90f60e","ELEMENT":"28962fea-4ffa-4dd6-b2c5-c1d13b90f60e"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-select[placeholder='GPU type']"}
+RESULT: {"using":"css selector","value":"md-select[placeholder='GPU type']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/28962fea-4ffa-4dd6-b2c5-c1d13b90f60e/click - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-option[value='NVIDIA_TESLA_P4']"}
+RESULT: {"using":"css selector","value":"md-option[value='NVIDIA_TESLA_P4']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"230c4c68-fd5d-4771-9e47-7be61626ff50","ELEMENT":"230c4c68-fd5d-4771-9e47-7be61626ff50"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"230c4c68-fd5d-4771-9e47-7be61626ff50","ELEMENT":"230c4c68-fd5d-4771-9e47-7be61626ff50"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"230c4c68-fd5d-4771-9e47-7be61626ff50","ELEMENT":"230c4c68-fd5d-4771-9e47-7be61626ff50"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"230c4c68-fd5d-4771-9e47-7be61626ff50","ELEMENT":"230c4c68-fd5d-4771-9e47-7be61626ff50"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-option[value='NVIDIA_TESLA_P4']"}
+RESULT: {"using":"css selector","value":"md-option[value='NVIDIA_TESLA_P4']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/230c4c68-fd5d-4771-9e47-7be61626ff50/click - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-select[placeholder='Number of GPUs']"}
+RESULT: {"using":"css selector","value":"md-select[placeholder='Number of GPUs']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9373efa5-cdfb-477a-aa92-9161839e476f","ELEMENT":"9373efa5-cdfb-477a-aa92-9161839e476f"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9373efa5-cdfb-477a-aa92-9161839e476f","ELEMENT":"9373efa5-cdfb-477a-aa92-9161839e476f"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9373efa5-cdfb-477a-aa92-9161839e476f","ELEMENT":"9373efa5-cdfb-477a-aa92-9161839e476f"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9373efa5-cdfb-477a-aa92-9161839e476f","ELEMENT":"9373efa5-cdfb-477a-aa92-9161839e476f"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-select[placeholder='Number of GPUs']"}
+RESULT: {"using":"css selector","value":"md-select[placeholder='Number of GPUs']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/9373efa5-cdfb-477a-aa92-9161839e476f/click - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-option[ng-repeat$='gpuType]'][value='1']"}
+RESULT: {"using":"css selector","value":"md-option[ng-repeat$='gpuType]'][value='1']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"111373bf-50d5-49b2-930b-8413a955488b","ELEMENT":"111373bf-50d5-49b2-930b-8413a955488b"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"111373bf-50d5-49b2-930b-8413a955488b","ELEMENT":"111373bf-50d5-49b2-930b-8413a955488b"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"111373bf-50d5-49b2-930b-8413a955488b","ELEMENT":"111373bf-50d5-49b2-930b-8413a955488b"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"111373bf-50d5-49b2-930b-8413a955488b","ELEMENT":"111373bf-50d5-49b2-930b-8413a955488b"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-option[ng-repeat$='gpuType]'][value='1']"}
+RESULT: {"using":"css selector","value":"md-option[ng-repeat$='gpuType]'][value='1']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/111373bf-50d5-49b2-930b-8413a955488b/click - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-select[placeholder$='SSD'][ng-model*='ver.ssd']"}
+RESULT: {"using":"css selector","value":"md-select[placeholder$='SSD'][ng-model*='ver.ssd']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"5fb75e09-86f1-4052-95ec-7a55d072f6a5","ELEMENT":"5fb75e09-86f1-4052-95ec-7a55d072f6a5"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"5fb75e09-86f1-4052-95ec-7a55d072f6a5","ELEMENT":"5fb75e09-86f1-4052-95ec-7a55d072f6a5"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"5fb75e09-86f1-4052-95ec-7a55d072f6a5","ELEMENT":"5fb75e09-86f1-4052-95ec-7a55d072f6a5"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"5fb75e09-86f1-4052-95ec-7a55d072f6a5","ELEMENT":"5fb75e09-86f1-4052-95ec-7a55d072f6a5"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-select[placeholder$='SSD'][ng-model*='ver.ssd']"}
+RESULT: {"using":"css selector","value":"md-select[placeholder$='SSD'][ng-model*='ver.ssd']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/5fb75e09-86f1-4052-95ec-7a55d072f6a5/click - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-option[ng-repeat*='Ssd.com'][value='2']"}
+RESULT: {"using":"css selector","value":"md-option[ng-repeat*='Ssd.com'][value='2']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/8c3ce425-ed05-44bf-8cd6-d3ee610fadb6/click - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-select[placeholder$='tion'][ng-model*='ver.loc']"}
+RESULT: {"using":"css selector","value":"md-select[placeholder$='tion'][ng-model*='ver.loc']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"be27440a-9410-4127-b23a-d8e476c815bc","ELEMENT":"be27440a-9410-4127-b23a-d8e476c815bc"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"be27440a-9410-4127-b23a-d8e476c815bc","ELEMENT":"be27440a-9410-4127-b23a-d8e476c815bc"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"be27440a-9410-4127-b23a-d8e476c815bc","ELEMENT":"be27440a-9410-4127-b23a-d8e476c815bc"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"be27440a-9410-4127-b23a-d8e476c815bc","ELEMENT":"be27440a-9410-4127-b23a-d8e476c815bc"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-select[placeholder$='tion'][ng-model*='ver.loc']"}
+RESULT: {"using":"css selector","value":"md-select[placeholder$='tion'][ng-model*='ver.loc']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/be27440a-9410-4127-b23a-d8e476c815bc/click - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-option[ng-repeat*='com'][value='europe-west3']"}
+RESULT: {"using":"css selector","value":"md-option[ng-repeat*='com'][value='europe-west3']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"c2d2fe20-9dd9-45cb-b70f-4728e5940b4b","ELEMENT":"c2d2fe20-9dd9-45cb-b70f-4728e5940b4b"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"c2d2fe20-9dd9-45cb-b70f-4728e5940b4b","ELEMENT":"c2d2fe20-9dd9-45cb-b70f-4728e5940b4b"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"c2d2fe20-9dd9-45cb-b70f-4728e5940b4b","ELEMENT":"c2d2fe20-9dd9-45cb-b70f-4728e5940b4b"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"c2d2fe20-9dd9-45cb-b70f-4728e5940b4b","ELEMENT":"c2d2fe20-9dd9-45cb-b70f-4728e5940b4b"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-option[ng-repeat*='com'][value='europe-west3']"}
+RESULT: {"using":"css selector","value":"md-option[ng-repeat*='com'][value='europe-west3']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/c2d2fe20-9dd9-45cb-b70f-4728e5940b4b/click - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"md-select[placeholder$='usage'][ng-model*='com']"}
+RESULT: {"using":"css selector","value":"md-select[placeholder$='usage'][ng-model*='com']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/7fc08bea-16f7-4c7d-a204-80cca75f9e82/click - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"xpath","value":"//*[contains(@style,'origin')]//*[contains(text(),'1 Year')]"}
+RESULT: {"using":"xpath","value":"//*[contains(@style,'origin')]//*[contains(text(),'1 Year')]"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/a8e799c1-3ef9-42f3-81fa-c6c8291fd60d/click - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"button[ng-disabled*=Com]"}
+RESULT: {"using":"css selector","value":"button[ng-disabled*=Com]"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/462f7f7d-839d-4fe0-8cd3-00c6c7125861/click - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"xpath","value":"//h2[text()='Estimate']"}
+RESULT: {"using":"xpath","value":"//h2[text()='Estimate']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"b38a65d7-de86-43c7-8d38-4ec4e0412e3c","ELEMENT":"b38a65d7-de86-43c7-8d38-4ec4e0412e3c"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"b38a65d7-de86-43c7-8d38-4ec4e0412e3c","ELEMENT":"b38a65d7-de86-43c7-8d38-4ec4e0412e3c"}]}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"xpath","value":"//*[@id='Email Estimate']"}
+RESULT: {"using":"xpath","value":"//*[@id='Email Estimate']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element/e548f3e5-4ddc-43e8-80b6-565f2af5ea42/click - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.109_0_5414_75.windows.HardCore_task" name="Copying email from new window and check cost" time="60.001">
+      <failure/>
+      <error message="Timeout of 60000ms exceeded. The execution in the test &quot;HardCore task Copying email from new window and check cost&quot; took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (D:\devops\wdio2\test\specs\Hardcoretask.js)"/>
+      <system-out><![CDATA[
+COMMAND: GET /session/0fa4b7ad90c9ca144a1900120a8d9edc/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function newWindow(url, windowName, windowFeatures) {\n    window.open(url, windowName || '', windowFeatures || '');\n}).apply(null, arguments)","args":["https://www.minuteinbox.com/","",""]}
+RESULT: {"script":"return (function newWindow(url, windowName, windowFeatures) {\n    window.open(url, windowName || '', windowFeatures || '');\n}).apply(null, arguments)","args":["https://www.minuteinbox.com/","",""]}
+COMMAND: GET /session/0fa4b7ad90c9ca144a1900120a8d9edc/window/handles - {}
+RESULT: {}
+COMMAND: GET /session/0fa4b7ad90c9ca144a1900120a8d9edc/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/window - {"handle":"CDwindow-3CDE126F3CE1F5518EA36C6565FD527D"}
+RESULT: {"handle":"CDwindow-3CDE126F3CE1F5518EA36C6565FD527D"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/element - {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: DELETE /session/0fa4b7ad90c9ca144a1900120a8d9edc - {}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/0fa4b7ad90c9ca144a1900120a8d9edc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ebddc903-7ac7-4257-91f8-f298f649c78a","ELEMENT":"ebddc903-7ac7-4257-91f8-f298f649c78a"}]}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Timeout of 60000ms exceeded. The execution in the test "HardCore task Copying email from new window and check cost" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (D:\devops\wdio2\test\specs\Hardcoretask.js)
+    at createTimeoutError (D:\devops\wdio2\node_modules\mocha\lib\errors.js:498:15)
+    at Runnable._timeoutError (D:\devops\wdio2\node_modules\mocha\lib\runnable.js:431:10)
+    at Timeout.<anonymous> (D:\devops\wdio2\node_modules\mocha\lib\runnable.js:246:24)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
