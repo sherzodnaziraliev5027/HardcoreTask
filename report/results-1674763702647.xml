@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Searching suite" timestamp="2023-01-27T01:08:24" time="60.003" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Searching suite"/>
+      <property name="capabilities" value="firefox.109_0.windows"/>
+      <property name="file" value="file:///D:/devops/wdio2/test/specs/search_spec.js"/>
+    </properties>
+    <testcase classname="firefox.109_0.windows.Searching_suite" name="Searching" time="60.002">
+      <failure/>
+      <error message="Timeout of 60000ms exceeded. The execution in the test &quot;Searching suite Searching&quot; took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (D:\devops\wdio2\test\specs\search_spec.js)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/window/maximize - {}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/url - {"url":"https://cloud.google.com/"}
+RESULT: {}
+RESULT: {"url":"https://cloud.google.com/"}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: GET /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/element/7e3f8471-51c5-493a-ae61-4e83e7ba0219/displayed - {}
+RESULT: {}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7e3f8471-51c5-493a-ae61-4e83e7ba0219","ELEMENT":"7e3f8471-51c5-493a-ae61-4e83e7ba0219"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7e3f8471-51c5-493a-ae61-4e83e7ba0219","ELEMENT":"7e3f8471-51c5-493a-ae61-4e83e7ba0219"}]}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/element/7e3f8471-51c5-493a-ae61-4e83e7ba0219/click - {}
+RESULT: {}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/element/7e3f8471-51c5-493a-ae61-4e83e7ba0219/clear - {}
+RESULT: {}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/element/7e3f8471-51c5-493a-ae61-4e83e7ba0219/value - {"text":"Google Cloud Platform Pricing Calculator"}
+RESULT: {"text":"Google Cloud Platform Pricing Calculator"}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/actions - {}
+RESULT: {}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: GET /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/element/b571bcb3-8069-480b-9df4-2f2b20ba3275/displayed - {}
+RESULT: {}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/element/b571bcb3-8069-480b-9df4-2f2b20ba3275/click - {}
+COMMAND: DELETE /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d - {}
+RESULT: {}
+COMMAND: POST /session/988abd0c-1f32-4695-a4fe-8d9ba6de308d/element - {"using":"xpath","value":"//a[contains(text(),'Contact Us')]"}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Timeout of 60000ms exceeded. The execution in the test "Searching suite Searching" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (D:\devops\wdio2\test\specs\search_spec.js)
+    at createTimeoutError (D:\devops\wdio2\node_modules\mocha\lib\errors.js:498:15)
+    at Runnable._timeoutError (D:\devops\wdio2\node_modules\mocha\lib\runnable.js:431:10)
+    at Timeout.<anonymous> (D:\devops\wdio2\node_modules\mocha\lib\runnable.js:246:24)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

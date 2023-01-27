@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Searching suite" timestamp="2023-01-27T01:12:14" time="29.959" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Searching suite"/>
+      <property name="capabilities" value="chrome.109_0_0_0.win32"/>
+      <property name="file" value="file:///D:/devops/wdio2/test/specs/search_spec.js"/>
+    </properties>
+    <testcase classname="chrome.109_0_0_0.win32.Searching_suite" name="Searching" time="29.957">
+      <failure/>
+      <error message="Your key input contains more than one character: &quot;Enter&quot;, only one is allowed though!"/>
+      <system-out><![CDATA[
+COMMAND: navigateTo - {"url":"https://cloud.google.com/"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: undefined
+COMMAND: executeScript - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ELEMENT-1","ELEMENT":"ELEMENT-1"}]}
+RESULT: undefined
+COMMAND: executeScript - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ELEMENT-1","ELEMENT":"ELEMENT-1"}]}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-2"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-3"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-3","text":"Google Cloud Platform Pricing Calculator"}
+RESULT: undefined
+COMMAND: takeScreenshot - {}
+RESULT: undefined
+COMMAND: deleteSession - {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Your key input contains more than one character: "Enter", only one is allowed though!
+    at Array.forEach (<anonymous>)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (D:\devops\wdio2\test\specs\search_spec.js:8:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

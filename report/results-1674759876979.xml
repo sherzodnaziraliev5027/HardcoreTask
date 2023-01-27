@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Searching suite" timestamp="2023-01-27T00:04:42" time="17.412" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Searching suite"/>
+      <property name="capabilities" value="firefox.109_0.windows"/>
+      <property name="file" value="file:///D:/devops/wdio2/test/specs/search_spec.js"/>
+    </properties>
+    <testcase classname="firefox.109_0.windows.Searching_suite" name="Searching" time="17.412">
+      <system-out><![CDATA[
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/window/maximize - {}
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/url - {"url":"https://cloud.google.com/"}
+RESULT: {}
+RESULT: {"url":"https://cloud.google.com/"}
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: GET /session/d8b5da17-7f73-4b50-b035-93d22a52e273/element/335d7cac-5e23-4181-beb5-7d73e7d27e0e/displayed - {}
+RESULT: {}
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"335d7cac-5e23-4181-beb5-7d73e7d27e0e","ELEMENT":"335d7cac-5e23-4181-beb5-7d73e7d27e0e"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"335d7cac-5e23-4181-beb5-7d73e7d27e0e","ELEMENT":"335d7cac-5e23-4181-beb5-7d73e7d27e0e"}]}
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/element/335d7cac-5e23-4181-beb5-7d73e7d27e0e/click - {}
+RESULT: {}
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/element/335d7cac-5e23-4181-beb5-7d73e7d27e0e/clear - {}
+RESULT: {}
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/element/335d7cac-5e23-4181-beb5-7d73e7d27e0e/value - {"text":"Google Cloud Platform Pricing Calculator"}
+RESULT: {"text":"Google Cloud Platform Pricing Calculator"}
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/d8b5da17-7f73-4b50-b035-93d22a52e273/actions - {}
+RESULT: {}
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: GET /session/d8b5da17-7f73-4b50-b035-93d22a52e273/element/33d2dc2f-7d62-4153-a02d-2c544d41e9c9/displayed - {}
+RESULT: {}
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/element/33d2dc2f-7d62-4153-a02d-2c544d41e9c9/click - {}
+RESULT: {}
+COMMAND: POST /session/d8b5da17-7f73-4b50-b035-93d22a52e273/element - {"using":"xpath","value":"//a[contains(text(),'Contact Us')]"}
+RESULT: {"using":"xpath","value":"//a[contains(text(),'Contact Us')]"}
+COMMAND: GET /session/d8b5da17-7f73-4b50-b035-93d22a52e273/element/def2c9d3-3a44-433b-b058-0723c07cc4f1/displayed - {}
+RESULT: {}
+COMMAND: DELETE /session/d8b5da17-7f73-4b50-b035-93d22a52e273 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

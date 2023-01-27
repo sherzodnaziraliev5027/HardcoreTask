@@ -23,8 +23,16 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/Hardcoretask.js'
+        './test/specs/**/*_spec.js',  
     ],
+    suites: {
+        smoke_search: [
+            './test/specs/calculator_spec.js'
+        ],
+        smoke_calculator: [
+            './test/specs/search_spec.js'
+        ]
+    },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -51,12 +59,12 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [{
-    
+    capabilities: [
+        {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 5,
+        maxInstances: 1,
         //
         browserName: 'chrome',
         acceptInsecureCerts: true
@@ -64,7 +72,13 @@ exports.config = {
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
-    }],
+    },
+    {
+        maxInstances: 1,
+        browserName: 'firefox',
+        acceptInsecureCerts: true
+    },
+],
     //
     // ===================
     // Test Configurations
@@ -112,8 +126,9 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver'],
-    
+     services: [
+        'geckodriver','chromedriver'
+    ],
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks
@@ -141,8 +156,7 @@ exports.config = {
         }
     }],['allure', {
         outputDir: 'allure-results',
-        disableWebdriverStepsReporting: false,
-        disableWebdriverScreenshotsReporting: false,
+        disableWebdriverScreenshotsReporting: false
     }]],
 
 
@@ -230,14 +244,17 @@ exports.config = {
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
      * beforeEach in Mocha)
      */
-    // beforeHook: function (test, context) {
-    // },
+    beforeTest: function (test, context) {
+        browser.maximizeWindow()
+    },
     /**
      * Hook that gets executed _after_ a hook within the suite starts (e.g. runs after calling
      * afterEach in Mocha)
      */
-    afterHook: async function (test, context, { error, result, duration, passed, retries }) {
-      await browser.takeScreenshot()
+     afterTest: async function (step, scenario, { error, duration, passed }, context) {
+     if(error){
+        await browser.saveScreenshot(`./screenshots/Hardcoretask_${new Date().getTime()}.png`)
+     }
     },
     /**
      * Function to be executed after a test (in Mocha/Jasmine only)

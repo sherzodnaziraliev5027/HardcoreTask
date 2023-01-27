@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="HardCore task" timestamp="2023-01-25T16:54:12" time="6.011" tests="3" failures="3" errors="3" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="HardCore task"/>
+      <property name="capabilities" value="chrome.109_0_5414_75.windows"/>
+      <property name="file" value="file:///D:/devops/wdio2/test/specs/Hardcoretask.js"/>
+    </properties>
+    <testcase classname="chrome.109_0_5414_75.windows.HardCore_task" name="Searching" time="0.447">
+      <failure/>
+      <error message="unknown error: net::ERR_NAME_NOT_RESOLVED&#xA;  (Session info: chrome=109.0.5414.75)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/7ee528e16f42c5cd4359b1d7f61a6301/url - {"url":"https://cloud.google.com/"}
+]]></system-out>
+      <system-err><![CDATA[
+unknown error: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=109.0.5414.75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (D:\devops\wdio2\test\specs\Hardcoretask.js:9:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.109_0_5414_75.windows.HardCore_task" name="Compute engine" time="0.41">
+      <failure/>
+      <error message="unknown error: net::ERR_NAME_NOT_RESOLVED&#xA;  (Session info: chrome=109.0.5414.75)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/7ee528e16f42c5cd4359b1d7f61a6301/url - {"url":"https://cloudpricingcalculator.appspot.com/"}
+]]></system-out>
+      <system-err><![CDATA[
+unknown error: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=109.0.5414.75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (D:\devops\wdio2\test\specs\Hardcoretask.js:19:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.109_0_5414_75.windows.HardCore_task" name="Copying email from new window and check cost" time="5.152">
+      <failure/>
+      <error message="element (&quot;div[class='emailBlock']&quot;) still not displayed after 5000ms"/>
+      <system-out><![CDATA[
+COMMAND: GET /session/7ee528e16f42c5cd4359b1d7f61a6301/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/7ee528e16f42c5cd4359b1d7f61a6301/execute/sync - {"script":"return (function newWindow(url, windowName, windowFeatures) {\n    window.open(url, windowName || '', windowFeatures || '');\n}).apply(null, arguments)","args":["https://www.minuteinbox.com/","",""]}
+RESULT: {"script":"return (function newWindow(url, windowName, windowFeatures) {\n    window.open(url, windowName || '', windowFeatures || '');\n}).apply(null, arguments)","args":["https://www.minuteinbox.com/","",""]}
+COMMAND: GET /session/7ee528e16f42c5cd4359b1d7f61a6301/window/handles - {}
+RESULT: {}
+COMMAND: GET /session/7ee528e16f42c5cd4359b1d7f61a6301/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/7ee528e16f42c5cd4359b1d7f61a6301/window - {"handle":"CDwindow-6BA083B0029682AFA38DDCEDFB58EB02"}
+RESULT: {"handle":"CDwindow-6BA083B0029682AFA38DDCEDFB58EB02"}
+COMMAND: POST /session/7ee528e16f42c5cd4359b1d7f61a6301/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/7ee528e16f42c5cd4359b1d7f61a6301/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/7ee528e16f42c5cd4359b1d7f61a6301/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/7ee528e16f42c5cd4359b1d7f61a6301/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/7ee528e16f42c5cd4359b1d7f61a6301/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/7ee528e16f42c5cd4359b1d7f61a6301/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/7ee528e16f42c5cd4359b1d7f61a6301/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/7ee528e16f42c5cd4359b1d7f61a6301/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/7ee528e16f42c5cd4359b1d7f61a6301/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/7ee528e16f42c5cd4359b1d7f61a6301/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/7ee528e16f42c5cd4359b1d7f61a6301/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: DELETE /session/7ee528e16f42c5cd4359b1d7f61a6301 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("div[class='emailBlock']") still not displayed after 5000ms
+    at async Context.<anonymous> (D:\devops\wdio2\test\specs\Hardcoretask.js:55:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

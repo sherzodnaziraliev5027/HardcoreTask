@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1674763583398' stop='1674763643402'>
+    <name>Searching suite</name>
+    <title>Searching suite</title>
+    <test-cases>
+        <test-case start='1674763583399' status='broken' stop='1674763643401'>
+            <name>Searching</name>
+            <title>Searching</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-109.0'/>
+            </parameters>
+            <steps>
+                <step start='1674763583400' status='broken' stop='1674763643401'>
+                    <name>POST /session/:sessionId/window/maximize</name>
+                    <title>POST /session/:sessionId/window/maximize</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1674763583400' status='passed' stop='1674763583410'>
+                            <name>POST /session/:sessionId/url</name>
+                            <title>POST /session/:sessionId/url</title>
+                            <attachments>
+                                <attachment title='Request' source='0c7fd5f9-5038-405b-9981-96c0e93bf72b-attachment.json' type='application/json' size='40'/>
+                                <attachment title='Response' source='901ba19c-fdb8-44fc-a3c6-57a891afb3e8-attachment.json' type='application/json' size='58'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Timeout of 60000ms exceeded. The execution in the test "Searching suite Searching" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (D:\devops\wdio2\test\specs\search_spec.js)</message>
+                <stack-trace>Error: Timeout of 60000ms exceeded. The execution in the test "Searching suite Searching" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (D:\devops\wdio2\test\specs\search_spec.js)
+                    at createTimeoutError (D:\devops\wdio2\node_modules\mocha\lib\errors.js:498:15)
+                    at Runnable._timeoutError (D:\devops\wdio2\node_modules\mocha\lib\runnable.js:431:10)
+                    at Timeout.&lt;anonymous> (D:\devops\wdio2\node_modules\mocha\lib\runnable.js:246:24)
+                    at listOnTimeout (node:internal/timers:564:17)
+                    at process.processTimers (node:internal/timers:507:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

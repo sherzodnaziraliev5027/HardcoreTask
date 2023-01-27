@@ -1,0 +1,114 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1674761630703' stop='1674761641401'>
+    <name>Searching suite</name>
+    <title>Searching suite</title>
+    <test-cases>
+        <test-case start='1674761630704' status='broken' stop='1674761641400'>
+            <name>Searching</name>
+            <title>Searching</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='2-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='edge-109.0.1518.61'/>
+            </parameters>
+            <steps>
+                <step start='1674761630713' status='passed' stop='1674761640807'>
+                    <name>navigateTo</name>
+                    <title>navigateTo</title>
+                    <attachments>
+                        <attachment title='Request' source='1d3beea5-7d95-44a8-8f14-98ae8de0bc25-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1674761640809' status='passed' stop='1674761640814'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='82819b0a-7daa-4cbc-974a-b430380ff145-attachment.json' type='application/json' size='71'/>
+                        <attachment title='Response' source='c80ece50-3bc0-4e96-a257-2f4c4bb17998-attachment.json' type='application/json' size='56'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1674761640819' status='passed' stop='1674761640826'>
+                    <name>executeScript</name>
+                    <title>executeScript</title>
+                    <attachments>
+                        <attachment title='Request' source='4784ebdd-6439-484b-b81a-5effde9b91a6-attachment.json' type='application/json' size='8330'/>
+                        <attachment title='Response' source='d6b63674-6659-41ac-a59f-07375c37c525-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1674761640827' status='passed' stop='1674761640833'>
+                    <name>executeScript</name>
+                    <title>executeScript</title>
+                    <attachments>
+                        <attachment title='Request' source='64fa4ba7-60be-47f7-9e56-78e38e76a5bb-attachment.json' type='application/json' size='5597'/>
+                        <attachment title='Response' source='4625e6c7-f5b9-432c-a619-d7161ef230fd-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1674761640835' status='passed' stop='1674761640837'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='6c063603-e462-4f1f-a4fb-db34e64a3963-attachment.json' type='application/json' size='71'/>
+                        <attachment title='Response' source='7965c824-f53c-493b-a8cc-cefc27ae2a0c-attachment.json' type='application/json' size='56'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1674761640843' status='passed' stop='1674761640897'>
+                    <name>elementClick</name>
+                    <title>elementClick</title>
+                    <attachments>
+                        <attachment title='Request' source='bda6be2f-8339-462a-ba41-08d23a70838a-attachment.json' type='application/json' size='30'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1674761640899' status='passed' stop='1674761640901'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='efa10dfb-c55e-4741-ad95-a146a00775e3-attachment.json' type='application/json' size='71'/>
+                        <attachment title='Response' source='d7dd0ec7-2402-4e1b-8ce8-de16693d4ed5-attachment.json' type='application/json' size='56'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1674761640903' status='passed' stop='1674761640907'>
+                    <name>elementClear</name>
+                    <title>elementClear</title>
+                    <attachments>
+                        <attachment title='Request' source='6e7e001b-e256-4ec6-889c-5ff433ea171b-attachment.json' type='application/json' size='30'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1674761640909' status='passed' stop='1674761641104'>
+                    <name>elementSendKeys</name>
+                    <title>elementSendKeys</title>
+                    <attachments>
+                        <attachment title='Request' source='a83d81a0-573e-466c-be2f-d6e9852a59e3-attachment.json' type='application/json' size='84'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1674761641110' status='passed' stop='1674761641395'>
+                    <name>takeScreenshot</name>
+                    <title>takeScreenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='9521df51-3d1d-4d8f-bd64-790d9e6778d8-attachment.png' type='image/png' size='523323'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Your key input contains more than one character: "Enter", only one is allowed though!</message>
+                <stack-trace>Error: Your key input contains more than one character: "Enter", only one is allowed though!
+                    at Array.forEach (&lt;anonymous>)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async Context.&lt;anonymous> (D:\devops\wdio2\test\specs\search_spec.js:8:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="HardCore task" timestamp="2023-01-25T17:04:43" time="6.226" tests="3" failures="3" errors="3" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="HardCore task"/>
+      <property name="capabilities" value="chrome.109_0_5414_75.windows"/>
+      <property name="file" value="file:///D:/devops/wdio2/test/specs/Hardcoretask.js"/>
+    </properties>
+    <testcase classname="chrome.109_0_5414_75.windows.HardCore_task" name="Searching" time="0.725">
+      <failure/>
+      <error message="unknown error: net::ERR_NAME_NOT_RESOLVED&#xA;  (Session info: chrome=109.0.5414.75)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/f14840b6dc08c59ef3a8b0bfd0462176/url - {"url":"https://cloud.google.com/"}
+]]></system-out>
+      <system-err><![CDATA[
+unknown error: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=109.0.5414.75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (D:\devops\wdio2\test\specs\Hardcoretask.js:9:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.109_0_5414_75.windows.HardCore_task" name="Compute engine" time="0.364">
+      <failure/>
+      <error message="unknown error: net::ERR_NAME_NOT_RESOLVED&#xA;  (Session info: chrome=109.0.5414.75)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/f14840b6dc08c59ef3a8b0bfd0462176/url - {"url":"https://cloudpricingcalculator.appspot.com/"}
+]]></system-out>
+      <system-err><![CDATA[
+unknown error: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=109.0.5414.75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (D:\devops\wdio2\test\specs\Hardcoretask.js:19:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.109_0_5414_75.windows.HardCore_task" name="Copying email from new window and check cost" time="5.134">
+      <failure/>
+      <error message="waitUntil condition failed with the following reason: no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=109.0.5414.75)"/>
+      <system-out><![CDATA[
+COMMAND: GET /session/f14840b6dc08c59ef3a8b0bfd0462176/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/f14840b6dc08c59ef3a8b0bfd0462176/execute/sync - {"script":"return (function newWindow(url, windowName, windowFeatures) {\n    window.open(url, windowName || '', windowFeatures || '');\n}).apply(null, arguments)","args":["https://www.minuteinbox.com/","",""]}
+RESULT: {"script":"return (function newWindow(url, windowName, windowFeatures) {\n    window.open(url, windowName || '', windowFeatures || '');\n}).apply(null, arguments)","args":["https://www.minuteinbox.com/","",""]}
+COMMAND: GET /session/f14840b6dc08c59ef3a8b0bfd0462176/window/handles - {}
+RESULT: {}
+COMMAND: GET /session/f14840b6dc08c59ef3a8b0bfd0462176/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/f14840b6dc08c59ef3a8b0bfd0462176/window - {"handle":"CDwindow-4DF7D88F2803221257C15A8B195FB234"}
+RESULT: {"handle":"CDwindow-4DF7D88F2803221257C15A8B195FB234"}
+COMMAND: POST /session/f14840b6dc08c59ef3a8b0bfd0462176/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/f14840b6dc08c59ef3a8b0bfd0462176/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/f14840b6dc08c59ef3a8b0bfd0462176/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/f14840b6dc08c59ef3a8b0bfd0462176/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/f14840b6dc08c59ef3a8b0bfd0462176/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/f14840b6dc08c59ef3a8b0bfd0462176/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/f14840b6dc08c59ef3a8b0bfd0462176/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/f14840b6dc08c59ef3a8b0bfd0462176/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/f14840b6dc08c59ef3a8b0bfd0462176/element - {"using":"css selector","value":"div[class='emailBlock']"}
+RESULT: {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/f14840b6dc08c59ef3a8b0bfd0462176/element - {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: POST /session/f14840b6dc08c59ef3a8b0bfd0462176/element - {"using":"css selector","value":"div[class='emailBlock']"}
+COMMAND: DELETE /session/f14840b6dc08c59ef3a8b0bfd0462176 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: waitUntil condition failed with the following reason: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.75)
+    at async Context.<anonymous> (D:\devops\wdio2\test\specs\Hardcoretask.js:55:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
