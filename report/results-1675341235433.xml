@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Searching suite" timestamp="2023-02-02T17:33:57" time="17.375" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Searching suite"/>
+      <property name="capabilities" value="firefox.109_0.windows"/>
+      <property name="file" value="file:///D:/devops/wdio2/test/specs/search_spec.js"/>
+    </properties>
+    <testcase classname="firefox.109_0.windows.Searching_suite" name="Searching" time="17.372">
+      <failure/>
+      <error message="element (&quot;div[class$='gs-title'] > [href$='products/calculator']&quot;) still not displayed after 5000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/window/maximize - {}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/url - {"url":"https://cloud.google.com/"}
+RESULT: {}
+RESULT: {"url":"https://cloud.google.com/"}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: GET /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/element/64b3ccfc-77c6-4319-b31b-dfeff15e1067/displayed - {}
+RESULT: {}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"64b3ccfc-77c6-4319-b31b-dfeff15e1067","ELEMENT":"64b3ccfc-77c6-4319-b31b-dfeff15e1067"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"64b3ccfc-77c6-4319-b31b-dfeff15e1067","ELEMENT":"64b3ccfc-77c6-4319-b31b-dfeff15e1067"}]}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/element/64b3ccfc-77c6-4319-b31b-dfeff15e1067/click - {}
+RESULT: {}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/element/64b3ccfc-77c6-4319-b31b-dfeff15e1067/clear - {}
+RESULT: {}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/element/64b3ccfc-77c6-4319-b31b-dfeff15e1067/value - {"text":"Google Cloud Platform Pricing Calculator"}
+RESULT: {"text":"Google Cloud Platform Pricing Calculator"}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":"E"},{"type":"keyDown","value":"n"},{"type":"keyDown","value":"t"},{"type":"keyDown","value":"e"},{"type":"pause","duration":10},{"type":"keyUp","value":"E"},{"type":"keyUp","value":"n"},{"type":"keyUp","value":"t"},{"type":"keyUp","value":"e"}]}]}
+RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":"E"},{"type":"keyDown","value":"n"},{"type":"keyDown","value":"t"},{"type":"keyDown","value":"e"},{"type":"pause","duration":10},{"type":"keyUp","value":"E"},{"type":"keyUp","value":"n"},{"type":"keyUp","value":"t"},{"type":"keyUp","value":"e"}]}]}
+COMMAND: DELETE /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/actions - {}
+RESULT: {}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: GET /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e/screenshot - {}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {}
+COMMAND: DELETE /session/0ffd209a-24e3-4d6f-9290-af93a6c53f3e - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("div[class$='gs-title'] > [href$='products/calculator']") still not displayed after 5000ms
+    at async Context.<anonymous> (D:\devops\wdio2\test\specs\search_spec.js:10:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

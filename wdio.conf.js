@@ -255,7 +255,10 @@ exports.config = {
      */
      afterTest: async function (step, scenario, { error, duration, passed }, context) {
      if(error){
-        await browser.saveScreenshot(`./screenshots/Hardcoretask_${new Date().getTime()}.png`)
+        const readabletime=new Date().toUTCString()
+        const replaced=readabletime.replace(/:/g,'_').replace(/ /g,'_')
+        console.log(replaced);
+        await browser.saveScreenshot(`./screenshots/${replaced}.png`)
      }
     },
     /**
