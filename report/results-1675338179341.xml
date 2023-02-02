@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Searching suite" timestamp="2023-02-02T16:43:01" time="27.44" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Searching suite"/>
+      <property name="capabilities" value="firefox.109_0.windows"/>
+      <property name="file" value="file:///D:/devops/wdio2/test/specs/search_spec.js"/>
+    </properties>
+    <testcase classname="firefox.109_0.windows.Searching_suite" name="Searching" time="27.439">
+      <system-out><![CDATA[
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/window/maximize - {}
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/url - {"url":"https://cloud.google.com/"}
+RESULT: {}
+RESULT: {"url":"https://cloud.google.com/"}
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: GET /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/element/6ecdb854-522d-4a65-a7a7-6936533e0f49/displayed - {}
+RESULT: {}
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"6ecdb854-522d-4a65-a7a7-6936533e0f49","ELEMENT":"6ecdb854-522d-4a65-a7a7-6936533e0f49"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"6ecdb854-522d-4a65-a7a7-6936533e0f49","ELEMENT":"6ecdb854-522d-4a65-a7a7-6936533e0f49"}]}
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/element/6ecdb854-522d-4a65-a7a7-6936533e0f49/click - {}
+RESULT: {}
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/element/6ecdb854-522d-4a65-a7a7-6936533e0f49/clear - {}
+RESULT: {}
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/element/6ecdb854-522d-4a65-a7a7-6936533e0f49/value - {"text":"Google Cloud Platform Pricing Calculator"}
+RESULT: {"text":"Google Cloud Platform Pricing Calculator"}
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/actions - {}
+RESULT: {}
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: GET /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/element/b3e90017-6398-416b-bde8-da328b2c1c96/displayed - {}
+RESULT: {}
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/element/b3e90017-6398-416b-bde8-da328b2c1c96/click - {}
+RESULT: {}
+COMMAND: POST /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/element - {"using":"xpath","value":"//a[contains(text(),'Contact Us')]"}
+RESULT: {"using":"xpath","value":"//a[contains(text(),'Contact Us')]"}
+COMMAND: GET /session/a4b8a54e-89c2-4512-bead-c3904fd9984f/element/ea8fc7a5-fe02-4ae4-b16d-82c32fc1aee8/displayed - {}
+RESULT: {}
+COMMAND: DELETE /session/a4b8a54e-89c2-4512-bead-c3904fd9984f - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

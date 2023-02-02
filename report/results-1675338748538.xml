@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Searching suite" timestamp="2023-02-02T16:52:30" time="25.127" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Searching suite"/>
+      <property name="capabilities" value="firefox.109_0.windows"/>
+      <property name="file" value="file:///D:/devops/wdio2/test/specs/search_spec.js"/>
+    </properties>
+    <testcase classname="firefox.109_0.windows.Searching_suite" name="Searching" time="25.126">
+      <system-out><![CDATA[
+COMMAND: POST /session/c337eefb-dad8-4081-957c-402302d26f8f/window/maximize - {}
+COMMAND: POST /session/c337eefb-dad8-4081-957c-402302d26f8f/url - {"url":"https://cloud.google.com/"}
+RESULT: {}
+RESULT: {"url":"https://cloud.google.com/"}
+COMMAND: POST /session/c337eefb-dad8-4081-957c-402302d26f8f/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: GET /session/c337eefb-dad8-4081-957c-402302d26f8f/element/58bcc66d-5def-4fb2-aee2-60cb1abe7462/displayed - {}
+RESULT: {}
+COMMAND: POST /session/c337eefb-dad8-4081-957c-402302d26f8f/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"58bcc66d-5def-4fb2-aee2-60cb1abe7462","ELEMENT":"58bcc66d-5def-4fb2-aee2-60cb1abe7462"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"58bcc66d-5def-4fb2-aee2-60cb1abe7462","ELEMENT":"58bcc66d-5def-4fb2-aee2-60cb1abe7462"}]}
+COMMAND: POST /session/c337eefb-dad8-4081-957c-402302d26f8f/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: POST /session/c337eefb-dad8-4081-957c-402302d26f8f/element/58bcc66d-5def-4fb2-aee2-60cb1abe7462/click - {}
+RESULT: {}
+COMMAND: POST /session/c337eefb-dad8-4081-957c-402302d26f8f/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: POST /session/c337eefb-dad8-4081-957c-402302d26f8f/element/58bcc66d-5def-4fb2-aee2-60cb1abe7462/clear - {}
+RESULT: {}
+COMMAND: POST /session/c337eefb-dad8-4081-957c-402302d26f8f/element/58bcc66d-5def-4fb2-aee2-60cb1abe7462/value - {"text":"Google Cloud Platform Pricing Calculator"}
+RESULT: {"text":"Google Cloud Platform Pricing Calculator"}
+COMMAND: POST /session/c337eefb-dad8-4081-957c-402302d26f8f/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/c337eefb-dad8-4081-957c-402302d26f8f/actions - {}
+RESULT: {}
+COMMAND: POST /session/c337eefb-dad8-4081-957c-402302d26f8f/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/c337eefb-dad8-4081-957c-402302d26f8f/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/c337eefb-dad8-4081-957c-402302d26f8f/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/c337eefb-dad8-4081-957c-402302d26f8f/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/c337eefb-dad8-4081-957c-402302d26f8f/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/c337eefb-dad8-4081-957c-402302d26f8f/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: GET /session/c337eefb-dad8-4081-957c-402302d26f8f/element/f43fd487-7121-49f8-be5d-9cd5062ac731/displayed - {}
+RESULT: {}
+COMMAND: POST /session/c337eefb-dad8-4081-957c-402302d26f8f/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/c337eefb-dad8-4081-957c-402302d26f8f/element/f43fd487-7121-49f8-be5d-9cd5062ac731/click - {}
+RESULT: {}
+COMMAND: POST /session/c337eefb-dad8-4081-957c-402302d26f8f/element - {"using":"xpath","value":"//a[contains(text(),'Contact Us')]"}
+RESULT: {"using":"xpath","value":"//a[contains(text(),'Contact Us')]"}
+COMMAND: GET /session/c337eefb-dad8-4081-957c-402302d26f8f/element/38c9f63b-74b8-4a31-934f-f8fecad79edc/displayed - {}
+RESULT: {}
+COMMAND: DELETE /session/c337eefb-dad8-4081-957c-402302d26f8f - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

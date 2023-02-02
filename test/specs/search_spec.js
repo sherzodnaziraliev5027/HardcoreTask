@@ -1,3 +1,4 @@
+const yargs=require('yargs').argv
 const homePage=require("../../app/Pageobjects/home-page");
 describe("Searching suite",() =>{
     it("Searching",async() =>{
@@ -9,5 +10,6 @@ describe("Searching suite",() =>{
     await homePage.calculatorlink.waitForDisplayed({timeout:5000})
     await homePage.gotocalculatorpage()
     await homePage.waitingload.waitForDisplayed({timeout:5000})
+    console.log(yargs.browser);
     })
 })

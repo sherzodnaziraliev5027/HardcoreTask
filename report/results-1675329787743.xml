@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Searching suite" timestamp="2023-02-02T14:23:08" time="19.207" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Searching suite"/>
+      <property name="capabilities" value="chrome.109_0_5414_120.windows"/>
+      <property name="file" value="file:///D:/devops/wdio2/test/specs/search_spec.js"/>
+    </properties>
+    <testcase classname="chrome.109_0_5414_120.windows.Searching_suite" name="Searching" time="19.206">
+      <system-out><![CDATA[
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/window/maximize - {}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/url - {"url":"https://cloud.google.com/"}
+RESULT: {}
+RESULT: {"url":"https://cloud.google.com/"}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"8de91702-b781-47fd-bec0-b4b1da856971","ELEMENT":"8de91702-b781-47fd-bec0-b4b1da856971"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"8de91702-b781-47fd-bec0-b4b1da856971","ELEMENT":"8de91702-b781-47fd-bec0-b4b1da856971"}]}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"8de91702-b781-47fd-bec0-b4b1da856971","ELEMENT":"8de91702-b781-47fd-bec0-b4b1da856971"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"8de91702-b781-47fd-bec0-b4b1da856971","ELEMENT":"8de91702-b781-47fd-bec0-b4b1da856971"}]}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/element/8de91702-b781-47fd-bec0-b4b1da856971/click - {}
+RESULT: {}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/element/8de91702-b781-47fd-bec0-b4b1da856971/clear - {}
+RESULT: {}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/element/8de91702-b781-47fd-bec0-b4b1da856971/value - {"text":"Google Cloud Platform Pricing Calculator"}
+RESULT: {"text":"Google Cloud Platform Pricing Calculator"}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/225ba07fad7c978ab39a7cdf53e3113d/actions - {}
+RESULT: {}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"5922702f-d6a2-458d-92a9-9a5adfa0c68a","ELEMENT":"5922702f-d6a2-458d-92a9-9a5adfa0c68a"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"5922702f-d6a2-458d-92a9-9a5adfa0c68a","ELEMENT":"5922702f-d6a2-458d-92a9-9a5adfa0c68a"}]}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/element/5922702f-d6a2-458d-92a9-9a5adfa0c68a/click - {}
+RESULT: {}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/element - {"using":"xpath","value":"//a[contains(text(),'Contact Us')]"}
+RESULT: {"using":"xpath","value":"//a[contains(text(),'Contact Us')]"}
+COMMAND: POST /session/225ba07fad7c978ab39a7cdf53e3113d/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"5b6c9faa-7b08-421d-8d47-658361c8da2a","ELEMENT":"5b6c9faa-7b08-421d-8d47-658361c8da2a"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"5b6c9faa-7b08-421d-8d47-658361c8da2a","ELEMENT":"5b6c9faa-7b08-421d-8d47-658361c8da2a"}]}
+COMMAND: DELETE /session/225ba07fad7c978ab39a7cdf53e3113d - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

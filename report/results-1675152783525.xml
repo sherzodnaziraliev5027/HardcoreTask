@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Searching suite" timestamp="2023-01-31T13:13:06" time="22.638" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Searching suite"/>
+      <property name="capabilities" value="firefox.109_0.windows"/>
+      <property name="file" value="file:///D:/devops/wdio2/test/specs/search_spec.js"/>
+    </properties>
+    <testcase classname="firefox.109_0.windows.Searching_suite" name="Searching" time="22.637">
+      <system-out><![CDATA[
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/window/maximize - {}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/url - {"url":"https://cloud.google.com/"}
+RESULT: {}
+RESULT: {"url":"https://cloud.google.com/"}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: GET /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element/5fb376a1-fd95-4bbb-8e31-7a1a81b69bfc/displayed - {}
+RESULT: {}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"5fb376a1-fd95-4bbb-8e31-7a1a81b69bfc","ELEMENT":"5fb376a1-fd95-4bbb-8e31-7a1a81b69bfc"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"5fb376a1-fd95-4bbb-8e31-7a1a81b69bfc","ELEMENT":"5fb376a1-fd95-4bbb-8e31-7a1a81b69bfc"}]}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element/5fb376a1-fd95-4bbb-8e31-7a1a81b69bfc/click - {}
+RESULT: {}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element - {"using":"css selector","value":"input[placeholder='Search']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element/5fb376a1-fd95-4bbb-8e31-7a1a81b69bfc/clear - {}
+RESULT: {}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element/5fb376a1-fd95-4bbb-8e31-7a1a81b69bfc/value - {"text":"Google Cloud Platform Pricing Calculator"}
+RESULT: {"text":"Google Cloud Platform Pricing Calculator"}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/e6164d53-a425-4e87-baa6-953baa3b12c4/actions - {}
+RESULT: {}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: GET /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element/8f3553d3-9bc2-4a48-ae51-c59e1df58487/displayed - {}
+RESULT: {}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element - {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+RESULT: {"using":"css selector","value":"div[class$='gs-title'] > [href$='products/calculator']"}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element/8f3553d3-9bc2-4a48-ae51-c59e1df58487/click - {}
+RESULT: {}
+COMMAND: POST /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element - {"using":"xpath","value":"//a[contains(text(),'Contact Us')]"}
+RESULT: {"using":"xpath","value":"//a[contains(text(),'Contact Us')]"}
+COMMAND: GET /session/e6164d53-a425-4e87-baa6-953baa3b12c4/element/237f85d1-9013-4e5f-a9a7-4362b89e34c5/displayed - {}
+RESULT: {}
+COMMAND: DELETE /session/e6164d53-a425-4e87-baa6-953baa3b12c4 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

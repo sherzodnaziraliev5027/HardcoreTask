@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Searching suite" timestamp="2023-02-02T15:28:35" time="9.417" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Searching suite"/>
+      <property name="capabilities" value="chrome.109_0_5414_120.windows"/>
+      <property name="file" value="file:///D:/devops/wdio2/test/specs/search_spec.js"/>
+    </properties>
+    <testcase classname="chrome.109_0_5414_120.windows.Searching_suite" name="Searching" time="9.415">
+      <failure/>
+      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=109.0.5414.120)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8567d53e707572e00821e2a8befcd55d/window/maximize - {}
+COMMAND: POST /session/8567d53e707572e00821e2a8befcd55d/url - {"url":"https://cloud.google.com/"}
+RESULT: {}
+RESULT: {"url":"https://cloud.google.com/"}
+COMMAND: POST /session/8567d53e707572e00821e2a8befcd55d/element - {"using":"css selector","value":"input[placeholder='Search']"}
+COMMAND: GET /session/8567d53e707572e00821e2a8befcd55d/screenshot - {}
+COMMAND: DELETE /session/8567d53e707572e00821e2a8befcd55d - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.120)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (D:\devops\wdio2\test\specs\search_spec.js:5:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

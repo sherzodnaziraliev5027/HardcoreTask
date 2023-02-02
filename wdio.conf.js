@@ -1,3 +1,4 @@
+const yargs=require('yargs').argv;
 exports.config = {
     //
     // ====================
@@ -27,10 +28,10 @@ exports.config = {
     ],
     suites: {
         smoke_search: [
-            './test/specs/calculator_spec.js'
+            './test/specs/search_spec.js'
         ],
         smoke_calculator: [
-            './test/specs/search_spec.js'
+            './test/specs/calculator_spec.js'
         ]
     },
     // Patterns to exclude.
@@ -53,12 +54,13 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 10,
+    maxInstances: 1,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
+    
     capabilities: [
         {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
@@ -66,18 +68,18 @@ exports.config = {
         // 5 instances get started at a time.
         maxInstances: 1,
         //
-        browserName: 'chrome',
+        browserName: `${yargs.browser}`,
         acceptInsecureCerts: true
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
     },
-    {
-        maxInstances: 1,
-        browserName: 'firefox',
-        acceptInsecureCerts: true
-    },
+    // {
+    //     maxInstances: 1,
+    //     browserName: 'firefox',
+    //     acceptInsecureCerts: true
+    // },
 ],
     //
     // ===================
@@ -120,7 +122,7 @@ exports.config = {
     connectionRetryTimeout: 120000,
     //
     // Default request retries count
-    connectionRetryCount: 3,
+    connectionRetryCount: 0,
     //
     // Test runner services
     // Services take over a specific job you don't want to take care of. They enhance
